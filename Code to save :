@@ -1,0 +1,14 @@
+Code to save : 
+
+stages = {
+    "1": {"points": 35, "days": 5},
+    "2": {"points": 180, "days": 14},
+    "3": {"points": 240, "days": 25},
+    "4": {"points": 300, "days": 30}
+}
+
+print=("WELCOME TO YAGO STAGE CALCULATOR")
+
+stage_choice = input("Enter your stage level (Choose from 1,2,3, or 4): ")
+
+
