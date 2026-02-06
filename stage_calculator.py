@@ -35,6 +35,17 @@ def main():
     else:
         remaining = points_needed - current_points
         print(f"You need {remaining} more points to pass Stage {stage_input}.")
+        
+        # 5. Calculate daily points needed
+        try:
+            days_left = int(input("How many days do you have left? "))
+            if days_left > 0:
+                daily_points = remaining / days_left
+                print(f"You need to earn {daily_points:.2f} points per day.")
+            else:
+                print("You need to get all points today!")
+        except ValueError:
+            print("Invalid input for days. showing remaining points only.")
 
 if __name__ == "__main__":
     main()
